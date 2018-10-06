@@ -1,0 +1,27 @@
+.main-block {
+  margin-bottom: 23px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: $white;
+  background-color: $green-light;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+}
+
+.main-block__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  font-family: $Oswald;
+  color: $white;
+}
+
+.main-block__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: $white;
+}

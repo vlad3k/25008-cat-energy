@@ -1,0 +1,28 @@
+.cooperation {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $white;
+}
+
+.cooperation--dark {
+  background-color: $gray-242;
+}
+
+.cooperation__text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.cooperation__address {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-family: $Arial;
+  color: $gray-68;
+}

@@ -1,0 +1,23 @@
+.more {
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $white;
+}
+
+.more__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.more__caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  font-family: $Arial;
+  color: $gray-68;
+}

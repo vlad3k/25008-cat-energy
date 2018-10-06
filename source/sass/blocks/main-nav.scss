@@ -1,0 +1,18 @@
+.main-nav {
+  color: $black;
+  background-color: $white;
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $black;
+}
+
+.main-nav__toggle {
+  font-size: 0;
+}
