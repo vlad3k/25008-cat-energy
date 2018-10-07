@@ -1,5 +1,5 @@
 .product-tile {
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .product-tile__name {
@@ -8,7 +8,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $black;
+  color: #111111;
 }
 
 .product-tile__properties {
@@ -16,5 +16,5 @@
   line-height: 16px;
   font-weight: normal;
   font-family: $Arial;
-  color: $gray-68;
+  color: #444444;
 }

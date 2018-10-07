@@ -4,7 +4,7 @@
   padding-bottom: 22px;
   padding-left: 22px;
   padding-right: 22px;
-  background-color: $gray-242;
+  background-color: #f2f2f2;
 }
 
 .program__title {
@@ -13,7 +13,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $black;
+  color: #111111;
 }
 
 .program__desc {
@@ -21,7 +21,7 @@
   line-height: 18px;
   font-weight: normal;
   font-family: $Arial;
-  color: $gray-68;
+  color: #444444;
 }
 
 .program__link {
@@ -31,5 +31,5 @@
   font-family: $Oswald;
   text-transform: uppercase;
   text-decoration: none;
-  color: $black;
+  color: #111111;
 }

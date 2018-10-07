@@ -1,5 +1,5 @@
 .field {
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .field__name {
@@ -8,7 +8,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $black;
+  color: #111111;
 }
 
 .field__input::-webkit-input-placeholder,
@@ -18,7 +18,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $gray-68;
+  color: #444444;
 }
 
 .field__input::-moz-placeholder,
@@ -28,7 +28,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $gray-68;
+  color: #444444;
 }
 
 .field__input:-moz-placeholder,
@@ -38,7 +38,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $gray-68;
+  color: #444444;
 }
 
 .field__input:-ms-input-placeholder,
@@ -48,5 +48,5 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $gray-68;
+  color: #444444;
 }

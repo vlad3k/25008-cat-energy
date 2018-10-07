@@ -1,3 +1,20 @@
 .product-tile-other {
-  background-color: $white;
+  background-color: #ffffff;
+}
+
+.product-tile-other__name {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.product-tile-other__properties {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+  font-family: $Arial;
+  color: #444444;
 }

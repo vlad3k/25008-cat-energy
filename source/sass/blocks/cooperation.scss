@@ -2,11 +2,15 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: $white;
+  background-color: #ffffff;
+}
+
+.cooperation__title {
+  @include visually-hidden;
 }
 
 .cooperation--dark {
-  background-color: $gray-242;
+  background-color: #f2f2f2;
 }
 
 .cooperation__text {
@@ -15,7 +19,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $black;
+  color: #111111;
 }
 
 .cooperation__address {
@@ -24,5 +28,5 @@
   font-style: normal;
   font-weight: normal;
   font-family: $Arial;
-  color: $gray-68;
+  color: #444444;
 }
