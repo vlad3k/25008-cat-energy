@@ -3,7 +3,9 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -18,13 +20,13 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -77,7 +79,7 @@
             </div>
           </fieldset>
           <fieldset class="fields">
-            <legend class="fields__title">Контактные данные (владельца кота)</legend>
+            <legend class="fields__title">Комментарий</legend>
             <div class="fields__item field">
               <textarea class="field__comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
@@ -105,8 +107,8 @@
           <p class="program-form__note">* — Обязательные поля</p>
         </form>
 
-        <section class="cooperation">
-          <h2 class="visually-hidden">Сотрудничество</h2>
+        <section class="cooperation cooperation--dark">
+          <h2 class="cooperation__title visually-hidden">Сотрудничество</h2>
           <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
           <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           <div class="map">
@@ -133,7 +135,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
       </footer>
 

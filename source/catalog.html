@@ -3,7 +3,9 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -18,10 +20,10 @@
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item  main-nav__item--active">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Подбор программы</a>
@@ -186,7 +188,7 @@
         <div class="more">
           <p class="more__title">Показать еще 100500 товаров</p>
           <p class="more__caption">На самом деле вкусов гораздо больше!</p>
-          <button class="btn" type="button">Показать все</button>
+          <button class="btn btn--others" type="button">Показать все</button>
         </div>
 
         <div class="other-products">
@@ -246,8 +248,8 @@
           </div>
         </div>
 
-        <section class="cooperation">
-          <h2 class="visually-hidden">Сотрудничество</h2>
+        <section class="cooperation cooperation--dark">
+          <h2 class="cooperation__title visually-hidden">Сотрудничество</h2>
           <p class="cooperation__text">приглашаем к сотрудничеству дилеров!</p>
           <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
           <div class="map">
@@ -274,7 +276,7 @@
           </li>
         </ul>
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
       </footer>
 
