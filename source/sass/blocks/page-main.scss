@@ -3,6 +3,8 @@
 }
 
 .page-main__title {
+  margin-top: 16px;
+  margin-bottom: 28px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -17,4 +19,14 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: $media-tablet) {
+
+  .page-main__title {
+    margin-top: 58px;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

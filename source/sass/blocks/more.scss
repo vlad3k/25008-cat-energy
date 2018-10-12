@@ -1,11 +1,47 @@
 .more {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 26px;
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.more__plus {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 30px;
+  height: 30px;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &:before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    left: 0;
+    top: 50%;
+    transform: rotate(90deg);
+  }
 }
 
 .more__title {
+  margin-top: 0;
+  margin-bottom: 7px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
@@ -15,9 +51,19 @@
 }
 
 .more__caption {
+  margin-top: 0;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+}
+
+.btn--others {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
 }
