@@ -1,10 +1,16 @@
 .btn {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #ffffff;
   background-color: #68b738;
 }
@@ -12,4 +18,15 @@
 .btn--others {
   color: #444444;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $media-tablet) {
+
+  .btn {
+    min-width: 245px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

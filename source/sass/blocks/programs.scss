@@ -1,5 +1,14 @@
 .programs {
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #ffffff;
+}
+
+@media (min-width: $media-desktop) {
+
+  .programs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

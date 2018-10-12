@@ -1,12 +1,16 @@
 .example {
-  padding-top: 1px;
-  padding-bottom: 39px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 17px;
+  padding-bottom: 35px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
 }
 
 .example__title {
+  margin-top: 0;
+  margin-bottom: 23px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -15,6 +19,8 @@
 }
 
 .example__description {
+  margin-bottom: 25px;
+  padding-right: 10px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -23,12 +29,30 @@
 }
 
 .example__cost {
+  margin-bottom: 34px;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
+  text-align: center;
   color: #111111;
+}
+
+.example__cat {
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: center;
+}
+
+.example__toggle-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 202px;
+  margin: 0 auto;
+  padding-top: 28px;
+  padding-left: 4px;
 }
 
 .example__position {
@@ -37,5 +61,185 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
-  color: $black;
+  color: #111111;
+}
+
+.example__line {
+  position: relative;
+  max-width: 84px;
+  width: 100%;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+}
+
+.example__toggle {
+  background-color: transparent;
+  border: none;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    display: block;
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    border-radius: 5px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $media-tablet) {
+
+  .example {
+    padding-top: 43px;
+    padding-bottom: 68px;
+    background-color: #ffffff;
+  }
+
+  .example__title {
+    margin-bottom: 64px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 53px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__result-wrapper {
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  .example__cost {
+    max-width: 192px;
+    margin-left: auto;
+    padding-top: 8px;
+    padding-right: 1px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+  }
+
+  .example__cat {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  .example__img {
+    margin-left: 14px;
+  }
+
+
+  .example__toggle-bar {
+    width: 575px;
+    padding-top: 16px;
+    padding-left: 2px;
+    padding-right: 3px;
+  }
+
+  .example__line {
+    max-width: 428px;
+    height: 6px;
+    margin-top: -7px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+
+  .example__position {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .example__toggle {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 15px);
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    transform: translateY(-50%);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:before {
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (min-width: $media-desktop) {
+
+  .example {
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 19px;
+  }
+
+  .example__wrapper {
+    max-width: 445px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    margin-bottom: 69px;
+  }
+
+  .example__result-wrapper {
+    flex-direction: column;
+    margin-bottom: 7px;
+  }
+
+  .example__cost {
+    max-width: none;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .example__cost {
+
+    span {
+      padding-right: 59px;
+    }
+  }
+
+  .example__cat {
+    max-width: 705px;
+    width: 100%;
+    margin-top: -55px;
+    margin-left: auto;
+    margin-right: -40px;
+  }
+
+  .example__toggle-bar {
+    width: 611px;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 36px;
+    padding-left: 0;
+    padding-right: 40px;
+  }
+
+
 }
