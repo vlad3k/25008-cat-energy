@@ -22,7 +22,6 @@
 }
 
 .social-list__link--vk {
-
   svg {
     width: 22px;
     height: 12px;
@@ -30,7 +29,6 @@
 }
 
 .social-list__link--instagram {
-
   svg {
     width: 16px;
     height: 16px;
@@ -38,7 +36,6 @@
 }
 
 .social-list__link--fb {
-
   svg {
     width: 10px;
     height: 19px;
@@ -46,7 +43,6 @@
 }
 
 @media (min-width: $media-tablet) {
-
   .social-list {
     padding-top: 20px;
     border: none;
@@ -58,7 +54,6 @@
   }
 
   .social-list__link--vk {
-
     svg {
       width: 30px;
       height: 16px;
@@ -66,7 +61,6 @@
   }
 
   .social-list__link--instagram {
-
     svg {
       width: 23px;
       height: 23px;
@@ -74,7 +68,6 @@
   }
 
   .social-list__link--fb {
-
     svg {
       width: 14px;
       height: 28px;

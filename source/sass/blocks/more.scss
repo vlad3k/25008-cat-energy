@@ -17,22 +17,22 @@
   width: 30px;
   height: 30px;
 
-  &:before,
-  &:after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: #d3d3d3;
   }
 
-  &:before {
+  &::before {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
   }
 
-  &:after {
+  &::after {
     left: 0;
     top: 50%;
     transform: rotate(90deg);

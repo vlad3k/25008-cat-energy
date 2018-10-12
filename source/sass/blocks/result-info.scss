@@ -48,8 +48,7 @@
   transform: translateX(-50%);
 }
 
-@media(min-width: $media-tablet) {
-
+@media (min-width: $media-tablet) {
   .result-info {
     justify-content: flex-start;
   }
@@ -80,8 +79,7 @@
   }
 }
 
-@media(min-width: $media-desktop) {
-
+@media (min-width: $media-desktop) {
   .example__result {
     margin-bottom: 13px;
   }

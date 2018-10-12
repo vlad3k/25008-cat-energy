@@ -12,8 +12,8 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 64px;
     left: 50%;

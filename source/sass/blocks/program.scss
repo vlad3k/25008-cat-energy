@@ -72,8 +72,8 @@
     padding-right: 12px;
     background-color: #f2f2f2;
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       display: block;
       position: absolute;
       top: calc(50% - 7px);
@@ -88,7 +88,6 @@
 }
 
 @media (min-width: $media-tablet) {
-
   .program {
     padding-top: 70px;
     padding-bottom: 41px;
@@ -106,7 +105,6 @@
   }
 
   .program__img--slim {
-
     img {
       top: -12px;
       left: 29px;
@@ -116,7 +114,6 @@
   }
 
   .program__img--pro {
-
     img {
       width: 269px;
     }
@@ -147,11 +144,10 @@
 }
 
 @media (min-width: $media-desktop) {
-
   .program {
     width: 570px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 47px;
     padding-left: 52px;
     padding-right: 52px;
@@ -167,7 +163,6 @@
   }
 
   .program__img--slim {
-
     img {
       top: -6px;
       left: 50%;
@@ -177,7 +172,6 @@
   }
 
   .program__img--pro {
-
     img {
       width: 135px;
     }

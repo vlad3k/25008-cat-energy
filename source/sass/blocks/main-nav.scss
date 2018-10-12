@@ -35,7 +35,6 @@
 }
 
 @media (min-width: $media-tablet) {
-
   .main-nav {
     display: block;
     flex-grow: 1;
@@ -61,11 +60,11 @@
   .main-nav__item--active {
     position: relative;
 
-    &:before {
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       bottom: -10px;
-      left: 0px;
+      left: 0;
       display: block;
       width: 98%;
       height: 2px;
@@ -82,8 +81,7 @@
   }
 }
 
-@media (min-width: 1300px) {
-
+@media (min-width: $media-desktop) {
   .main-nav {
     background-color: transparent;
   }
@@ -93,8 +91,7 @@
   }
 
   .main-nav__item--active {
-
-    &:before {
+    &::before {
       left: 2px;
       width: 97%;
       background-color: #ffffff;
