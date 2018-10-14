@@ -1,6 +1,11 @@
 .product-tile-other {
   padding-top: 14px;
   background-color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 26px;
+    padding-left: 9px;
+  }
 }
 
 .product-tile-other__name {
@@ -12,6 +17,11 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .product-tile-other__properties {
@@ -23,6 +33,11 @@
   font-family: $Arial;
   color: #444444;
   border-collapse: collapse;
+
+  @media (min-width: $media-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .product-tile-other__value {

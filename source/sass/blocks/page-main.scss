@@ -10,6 +10,17 @@
   font-weight: normal;
   font-family: $Oswald;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    margin-top: 58px;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-top: 77px;
+  }
 }
 
 .page-main__description {
@@ -19,13 +30,4 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
-}
-
-@media (min-width: $media-tablet) {
-  .page-main__title {
-    margin-top: 58px;
-    margin-bottom: 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
 }

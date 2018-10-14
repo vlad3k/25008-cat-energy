@@ -3,20 +3,78 @@
   margin-top: 9px;
   color: #111111;
   background-color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    display: block;
+    flex-grow: 1;
+    width: auto;
+    margin-top: 0;
+  }
+
+  @media (min-width: $media-desktop) {
+    background-color: transparent;
+  }
 }
 
 .main-nav__list {
   @include reset-list;
   margin-left: -20px;
   margin-right: -20px;
+
+  @media (min-width: $media-tablet) {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 6px;
+  }
 }
 
-.main-nav--close .main-nav__list {
+.main-nav--close {
   display: none;
 }
 
-.main-nav--open .main-nav__list {
+.main-nav--open {
   display: block;
+  width: 100%;
+}
+
+.main-nav__item {
+  @media (min-width: $media-tablet) {
+    margin-left: 35px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.main-nav__item--active {
+  @media (min-width: $media-tablet) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      display: block;
+      width: 98%;
+      height: 2px;
+      background-color: #68b738;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    &::after {
+      left: 2px;
+      width: 97%;
+      background-color: #ffffff;
+    }
+  }
 }
 
 .main-nav__link {
@@ -32,73 +90,16 @@
   text-align: center;
   color: #111111;
   border-top: 1px solid #e6e6e6;
-}
 
-@media (min-width: $media-tablet) {
-  .main-nav {
-    display: block;
-    flex-grow: 1;
-    width: auto;
-    margin-top: 0;
-  }
-
-  .main-nav__list {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 20px;
-    margin-right: 0;
-  }
-
-  .main-nav__item {
-    margin-left: 35px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-  }
-
-  .main-nav__item--active {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      display: block;
-      width: 98%;
-      height: 2px;
-      background-color: #68b738;
-    }
-  }
-
-  .main-nav__link {
+  @media (min-width: $media-tablet) {
     padding: 0;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
     border: none;
   }
-}
 
-@media (min-width: $media-desktop) {
-  .main-nav {
-    background-color: transparent;
-  }
-
-  .main-nav__list {
-    padding-top: 6px;
-  }
-
-  .main-nav__item--active {
-    &::before {
-      left: 2px;
-      width: 97%;
-      background-color: #ffffff;
-    }
-  }
-
-  .main-nav__link {
+  @media (min-width: $media-desktop) {
     font-size: 20px;
     line-height: 25px;
     color: #ffffff;

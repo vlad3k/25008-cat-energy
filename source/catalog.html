@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <hegitad>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная страница Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-  </hegitad>
+  </head>
 
   <body>
 
@@ -49,6 +49,7 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
+                  <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
                   <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
                   <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                 </picture>
@@ -77,7 +78,8 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
-                    <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
+                  <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
                   <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                 </picture>
               </div>
@@ -105,6 +107,8 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
+                  <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
                   <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                 </picture>
               </div>
@@ -132,6 +136,8 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
+                    <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
                   <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                 </picture>
               </div>
@@ -158,9 +164,11 @@
           <li class="products__item">
             <div class="product-tile">
               <div class="product-tile__img">
-                <pictire>
-                  <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
-                </pictire>
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
+                  <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
+                </picture>
               </div>
               <div class="product-tile__wrapper">
                 <h3 class="product-tile__name">Cat Energy Slim 500 г</h3>
@@ -186,6 +194,8 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
+                  <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
                   <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                 </picture>
               </div>
@@ -213,6 +223,8 @@
             <div class="product-tile">
               <div class="product-tile__img">
                 <picture>
+                  <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
                   <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                 </picture>
               </div>
@@ -236,13 +248,16 @@
               <a class="product-tile__btn btn" href="#">Заказать</a>
             </div>
           </li>
+          <li class="products__item">
+            <div class="more">
+              <div class="more__plus"></div>
+              <p class="more__title">Показать еще 100500 товаров</p>
+              <p class="more__caption">На самом деле вкусов гораздо больше!</p>
+              <button class="more__btn btn btn--others" type="button">Показать все</button>
+            </div>
+          </li>
         </ul>
-        <div class="more">
-          <div class="more__plus"></div>
-          <p class="more__title">Показать еще 100500 товаров</p>
-          <p class="more__caption">На самом деле вкусов гораздо больше!</p>
-          <button class="btn btn--others" type="button">Показать все</button>
-        </div>
+
 
         <div class="other-products">
           <h2 class="other-products__title">Дополнительные товары</h2>

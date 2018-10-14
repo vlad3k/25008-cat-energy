@@ -13,19 +13,22 @@
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
-}
 
-.btn--others {
-  color: #444444;
-  background-color: #f2f2f2;
-}
-
-@media (min-width: $media-tablet) {
-  .btn {
+  @media (min-width: $media-tablet) {
     min-width: 245px;
     padding-top: 15px;
     padding-bottom: 17px;
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.btn--others {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #f2f2f2;
+  border: none;
 }

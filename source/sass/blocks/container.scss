@@ -4,18 +4,14 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: transparent;
-}
 
-@media (min-width: $media-tablet) {
-  .container {
+  @media (min-width: $media-tablet) {
     width: 768px;
     padding-left: 30px;
     padding-right: 30px;
   }
-}
 
-@media (min-width: $media-desktop) {
-  .container {
+  @media (min-width: $media-desktop) {
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;

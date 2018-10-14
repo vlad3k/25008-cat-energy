@@ -8,6 +8,20 @@
   background-color: #ffffff;
   text-align: center;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $media-tablet) {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 54px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 52px;
+  }
 }
 
 .more__plus {
@@ -37,6 +51,12 @@
     top: 50%;
     transform: rotate(90deg);
   }
+
+  @media (min-width: $media-tablet) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
 }
 
 .more__title {
@@ -48,6 +68,14 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    max-width: 145px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .more__caption {
@@ -58,12 +86,23 @@
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.btn--others {
-  width: 100%;
-  padding-bottom: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  border: none;
+.more__btn {
+  @media (min-width: $media-tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $media-desktop) {
+    min-width: 169px;
+  }
 }
