@@ -1,21 +1,30 @@
 .page-header {
+  background-color: #ffffff;
+}
+
+.page-header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 0 auto;
+  width: 320px;
   padding-top: 14px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #ffffff;
 
   @media (min-width: $media-tablet) {
+    width: 768px;
     padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $media-desktop) {
+    width: 1300px;
     padding-top: 53px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

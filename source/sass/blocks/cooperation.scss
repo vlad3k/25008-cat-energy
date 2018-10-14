@@ -20,6 +20,25 @@
   background-color: #f2f2f2;
 }
 
+.cooperation__inner {
+  margin: 0 auto;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $media-tablet) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .cooperation__wrapper {
   display: flex;
   align-items: center;

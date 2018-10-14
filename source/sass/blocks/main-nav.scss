@@ -40,6 +40,10 @@
 .main-nav--open {
   display: block;
   width: 100%;
+
+  @media (min-width: $media-tablet) {
+    width: auto;
+  }
 }
 
 .main-nav__item {

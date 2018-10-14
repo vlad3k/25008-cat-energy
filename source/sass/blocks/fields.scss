@@ -11,3 +11,9 @@
   font-family: $Oswald;
   color: #111111;
 }
+
+.fields__wrapper {
+  @media (min-width: $media-tablet) {
+    display: flex;
+  }
+}
