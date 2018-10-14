@@ -1,13 +1,6 @@
 .main-block {
   margin-bottom: 22px;
   padding-top: 3px;
-}
-
-.main-block__inner {
-  margin: 0 auto;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #ffffff;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -16,29 +9,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 768px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     padding-top: 58px;
-    padding-left: 30px;
-    padding-right: 30px;
     background-image: none;
   }
 
   @media (min-width: $media-desktop) {
-    width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 222px;
     padding-bottom: 55px;
     background-position: 112% 0;
     background-image: url("../img/index-background-desktop@1x.jpg");
   }
 }
+
 
 .main-block__title {
   margin-top: 24px;

@@ -72,6 +72,14 @@
   }
 }
 
+.other-products__wrapper {
+  @media (min-width: $media-desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
 .other-products .products__item {
   padding-bottom: 17px;
 
