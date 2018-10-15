@@ -1,23 +1,108 @@
 .more {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 26px;
   padding-bottom: 24px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: $media-tablet) {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 54px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 52px;
+  }
+}
+
+.more__plus {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    left: 0;
+    top: 50%;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $media-tablet) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+  }
 }
 
 .more__title {
+  margin-top: 0;
+  margin-bottom: 7px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    max-width: 145px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .more__caption {
+  margin-top: 0;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.more__btn {
+  @media (min-width: $media-tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $media-desktop) {
+    min-width: 169px;
+  }
 }

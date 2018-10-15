@@ -1,8 +1,13 @@
 .program-form {
   padding-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #ffffff;
+
+  @media (min-width: $media-desktop) {
+    .program-form__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .program-form__note {

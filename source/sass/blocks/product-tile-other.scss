@@ -1,20 +1,51 @@
 .product-tile-other {
+  padding-top: 14px;
   background-color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 26px;
+    padding-left: 9px;
+  }
 }
 
 .product-tile-other__name {
+  margin-top: 0;
+  margin-bottom: 11px;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .product-tile-other__properties {
-  font-size: 12px;
-  line-height: 16px;
+  width: 100%;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+  border-collapse: collapse;
+
+  @media (min-width: $media-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-tile-other__value {
+  text-align: right;
+}
+
+.product-tile-other__btn {
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
 }

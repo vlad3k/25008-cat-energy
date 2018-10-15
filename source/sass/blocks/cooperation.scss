@@ -1,28 +1,121 @@
 .cooperation {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 29px;
   background-color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 63px;
+  }
+
+  @media (min-width: $media-desktop) {
+    position: relative;
+    padding-top: 0;
+  }
 }
 
 .cooperation--dark {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f2f2f2;
 }
 
+.cooperation__inner {
+  margin: 0 auto;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $media-tablet) {
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.cooperation__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 58px;
+    padding-left: 41px;
+    padding-right: 42px;
+  }
+
+  @media (min-width: $media-desktop) {
+    position: absolute;
+    top: 49%;
+    left: 0;
+    width: 570px;
+    min-height: 201px;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-left: 76px;
+    padding-right: 84px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+  }
+}
+
 .cooperation__text {
+  width: 50%;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    max-width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .cooperation__address {
+  width: 50%;
+  margin-left: auto;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    span {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    text-align: left;
+  }
+}
+
+.cooperation__map {
+  @media (min-width: $media-tablet) {
+    height: 396px;
+  }
+
+  @media (min-width: $media-desktop) {
+    text-align: left;
+  }
 }

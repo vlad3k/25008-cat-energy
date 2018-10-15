@@ -1,12 +1,29 @@
 .gift {
-  margin-top: 40px;
+  position: relative;
+  min-height: 289px;
+  margin-top: 39px;
   margin-bottom: 35px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 171px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
   color: #ffffff;
   background-color: #68b738;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+  }
 }
 
 .gift__text {

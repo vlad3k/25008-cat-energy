@@ -1,3 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   font-size: 14px;
   line-height: 18px;
@@ -15,4 +31,9 @@ body {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

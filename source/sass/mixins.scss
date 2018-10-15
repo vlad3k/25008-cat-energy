@@ -1,1 +1,14 @@
-//mixins
+// clearfix
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin reset-list ($padding: 0, $margin: 0) {
+  margin: $margin;
+  padding: $padding;
+  list-style: none;
+}

@@ -1,20 +1,112 @@
 .product-tile {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    display: block;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
+  }
+}
+
+.product-tile__wrapper {
+  flex-grow: 1;
+  padding-top: 22px;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 34px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-bottom: 33px;
+  }
+}
+
+.product-tile__img {
+  flex-shrink: 0;
+  width: 140px;
+  height: 144px;
+
+  @media (min-width: $media-tablet) {
+    width: 100%;
+    min-height: 213px;
+    margin-top: -82px;
+    margin-bottom: 10px;
+  }
 }
 
 .product-tile__name {
+  max-width: 100px;
+  margin-top: 0;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 20px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    max-width: 130px;
+    margin: 0 auto;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .product-tile__properties {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 0;
   font-size: 12px;
   line-height: 16px;
   font-weight: normal;
   font-family: $Arial;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.product-tile__property {
+  @media (min-width: $media-tablet) {
+    padding: 7px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product-tile__value {
+  text-align: right;
+
+  @media (min-width: $media-tablet) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.product-tile__btn {
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $media-tablet) {
+    width: auto;
+    margin-left: 37px;
+    margin-right: 37px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $media-desktop) {
+    min-width: 169px;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
 }
