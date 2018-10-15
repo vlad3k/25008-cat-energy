@@ -1,5 +1,4 @@
 .program {
-  margin-bottom: 20px;
   padding-top: 24px;
   padding-left: 20px;
   padding-right: 20px;
@@ -172,12 +171,17 @@
     clip: rect(auto, auto, auto, 11px);
   }
 
+  &:hover {
+    padding-right: 60px;
+
+    &::after {
+      clip: rect(auto, auto, auto, auto);
+    }
+  }
+
   @media (min-width: $media-tablet) {
+    padding-right: 49px;
     font-size: 20px;
     line-height: 20px;
-
-    span {
-      padding-right: 24px;
-    }
   }
 }
