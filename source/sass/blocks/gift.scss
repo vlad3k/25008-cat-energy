@@ -1,7 +1,6 @@
 .gift {
   position: relative;
   min-height: 289px;
-  margin-top: 39px;
   margin-bottom: 35px;
   padding-top: 171px;
   padding-left: 50px;
@@ -24,6 +23,37 @@
     background-position: center;
     transform: translateX(-50%);
   }
+
+  @media (min-width: $media-tablet) {
+    min-height: 200px;
+    margin-bottom: 76px;
+    padding-top: 56px;
+    padding-left: 423px;
+    text-align: left;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: cover;
+
+    &::before {
+      left: 91px;
+      transform: none;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 245px;
+    min-height: 289px;
+    margin-bottom: 0;
+    padding-top: 171px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .gift__text {
@@ -32,4 +62,8 @@
   font-weight: normal;
   font-family: $Arial;
   color: #ffffff;
+
+  @media (min-width: $media-tablet) {
+    max-width: 165px;
+  }
 }

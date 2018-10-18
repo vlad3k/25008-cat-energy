@@ -1,0 +1,14 @@
+.products-extra {
+  @include reset-list;
+  margin-bottom: 39px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 900px;
+    margin-bottom: 0;
+  }
+}

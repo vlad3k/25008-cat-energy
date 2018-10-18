@@ -4,7 +4,9 @@
   background-color: #ffffff;
 
   @media (min-width: $media-tablet) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding-bottom: 40px;
     background-color: #f2f2f2;
   }
@@ -21,7 +23,7 @@
   }
 
   @media (min-width: $media-desktop) {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
   }
 }
 
@@ -29,8 +31,11 @@
   flex-shrink: 0;
   width: 140px;
   height: 144px;
+  overflow: hidden;
 
   @media (min-width: $media-tablet) {
+    display: flex;
+    align-items: flex-end;
     width: 100%;
     min-height: 213px;
     margin-top: -82px;
@@ -39,6 +44,7 @@
 }
 
 .product-tile__name {
+  display: block;
   max-width: 100px;
   margin-top: 0;
   margin-bottom: 9px;
@@ -47,6 +53,7 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
+  text-decoration: none;
   color: #111111;
 
   @media (min-width: $media-tablet) {

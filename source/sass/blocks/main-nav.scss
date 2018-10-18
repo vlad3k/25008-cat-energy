@@ -75,8 +75,8 @@
   @media (min-width: $media-desktop) {
     &::after {
       left: 2px;
-      width: 97%;
-      background-color: #ffffff;
+      width: 99%;
+      background-color: #68b738;
     }
   }
 }
@@ -114,6 +114,20 @@
   @media (min-width: $media-desktop) {
     font-size: 20px;
     line-height: 25px;
+    color: #111111;
+  }
+}
+
+.main-nav--light .main-nav__link {
+  @media (min-width: $media-desktop) {
     color: #ffffff;
+  }
+}
+
+@media (min-width: $media-desktop) {
+  .main-nav--light .main-nav__item--active {
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }

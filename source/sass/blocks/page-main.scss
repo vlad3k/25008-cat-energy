@@ -2,8 +2,20 @@
   background-color: #ffffff;
 }
 
+.page-main--padding {
+  padding-top: 14px;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-top: 76px;
+  }
+}
+
 .page-main__title {
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 28px;
   font-size: 36px;
   line-height: 60px;
@@ -12,14 +24,9 @@
   color: #111111;
 
   @media (min-width: $media-tablet) {
-    margin-top: 58px;
     margin-bottom: 0;
     font-size: 60px;
     line-height: 60px;
-  }
-
-  @media (min-width: $media-desktop) {
-    margin-top: 77px;
   }
 }
 
