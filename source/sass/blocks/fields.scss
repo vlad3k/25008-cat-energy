@@ -1,19 +1,139 @@
 .fields {
+  margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #ffffff;
+  border: none;
+
+  @media (min-width: $media-tablet) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.fields--common {
+  padding-bottom: 72px;
+
+  @media (min-width: $media-desktop) {
+    width: 570px;
+    margin-right: 80px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.fields--radio {
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 20px;
+
+  @media (min-width: $media-tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 27px;
+    border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 570px;
+  }
 }
 
 .fields__title {
+  margin: 0;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   font-family: $Oswald;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.fields__wrapper {
+.fields__item {
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $media-tablet) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.fields--radio .fields__item {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.fields--contacts {
+  padding-top: 28px;
+  padding-bottom: 8px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 48px;
+  }
+}
+
+.fields--contacts .fields__wrapper {
+  @media (min-width: $media-desktop) {
+    display: flex;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.fields--coment {
+  padding-bottom: 59px;
+}
+
+.fields--extra {
+  padding-top: 6px;
+  padding-bottom: 32px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 60px;
+  }
+}
+
+.fields--extra .fields__title {
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $media-tablet) {
+    margin-bottom: 60px;
+  }
+}
+
+.fields--extra .fields__wrapper {
   @media (min-width: $media-tablet) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $media-desktop) {
+    justify-content: space-between;
   }
 }

@@ -13,9 +13,11 @@
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
+  border: none;
 
   &:hover {
     background-color: #5eaa2f;
+    cursor: pointer;
   }
 
   &:active {

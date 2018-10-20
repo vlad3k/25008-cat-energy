@@ -30,11 +30,32 @@
   }
 }
 
+.page-main__title--margin {
+  @media (min-width: $media-tablet) {
+    margin-bottom: 56px;
+  }
+}
+
 .page-main__description {
+  max-width: 230px;
+  margin: 0;
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $media-tablet) {
+    max-width: 384px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-left: 0;
+  }
 }

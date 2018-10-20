@@ -22,16 +22,16 @@
           </a>
           <button class="page-header__toggle page-header__toggle--open" type="button">Открыть меню
           </button>
-          <nav class="main-nav--open">
+          <nav class="main-nav main-nav--open">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link">Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -39,16 +39,19 @@
       </header>
     </div>
 
-    <main class="page-main">
+    <main class="page-main page-main--padding">
       <div class="container">
         <div class="container__inner">
-          <h1 class="page-main__title">Подбор программы</h1>
+          <h1 class="page-main__title page-main__title--margin">Подбор программы</h1>
 
           <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-
+        </div>
+      </div>
+      <div class="container">
+        <div class="container__inner container__inner--without-padding">
           <form class="program-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="program-form__wrapper">
-              <fieldset class="fields">
+              <fieldset class="fields fields--common">
                 <div class="fields__item field">
                   <label class="field__name" for="name">Имя:*</label>
                   <input class="field__input" id="name" type="text" placeholder="Барсик">
@@ -62,70 +65,83 @@
                   <input class="field__input" id="age" type="number" placeholder="7">
                 </div>
               </fieldset>
-              <fieldset class="fields">
-                <div class="fields__item field">
+              <fieldset class="fields fields--radio">
+                <div class="fields__item field field--radio">
                   <input class="field__radio" id="loss" name="variant" type="radio" checked>
                   <label class="field__name" for="loss">Похудение</label>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--radio">
                   <input class="field__radio" id="gain" name="variant" type="radio">
                   <label class="field__name" for="gain">Набор массы</label>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--radio">
                   <input class="field__radio" id="unknown" name="variant" type="radio">
                   <label class="field__name" for="unknown">Не знаю (Нужен ваш совет)</label>
                 </div>
               </fieldset>
             </div>
-            <fieldset class="fields">
-              <legend class="fields__title">Контактные данные (владельца кота)</legend>
+            <fieldset class="fields fields--contacts">
+              <h3 class="fields__title">Контактные данные (владельца кота)</h3>
               <div class="fields__wrapper">
-                <div class="fields__item field">
+                <div class="fields__item field field--contact">
                   <label class="field__name" for="email">E-mail:*</label>
-                  <input class="field__input" id="email" type="text" placeholder="kuklachev@gmail.com">
+                  <input class="field__input" id="email" type="email" placeholder="kuklachev@gmail.com">
+                  <svg class="field__icon" width="17px" height="13px" viewBox="0 0 17 13" xml:space="preserve">
+                    <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                  </svg>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--contact">
                   <label class="field__name" for="phone">Телефон:*</label>
                   <input class="field__input" id="phone" type="text" placeholder="8 (960) 900-60-90">
+                  <svg class="field__icon" width="20px" height="20px" viewBox="0 0 20 20" xml:space="preserve">
+                    <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                    <path
+                      d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                    c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                    C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                    C7.8,20,8.1,19.7,8.1,19.4z"/>
+                  </svg>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="fields">
-              <legend class="fields__title">Комментарий</legend>
+            <fieldset class="fields fields--coment">
+              <h3 class="fields__title">Комментарий</h3>
               <div class="fields__item field">
                 <textarea class="field__comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
-            <fieldset class="fields">
-              <legend class="fields__title">Дополнительно</legend>
+            <fieldset class="fields fields--extra">
+              <h3 class="fields__title">Дополнительно</h3>
               <div class="fields__wrapper">
-                <div class="fields__item field">
+                <div class="fields__item field field--checkbox">
                   <input class="field__checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
                   <label class="field__name" for="sweetener">Сахарозаменитель</label>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--checkbox">
                   <input class="field__checkbox" id="water" name="water" type="checkbox">
                   <label class="field__name" for="water">Питьевая вода</label>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--checkbox">
                   <input class="field__checkbox" id="milk" name="milk" type="checkbox">
                   <label class="field__name" for="milk">Молоко</label>
                 </div>
-                <div class="fields__item field">
+                <div class="fields__item field field--checkbox">
                   <input class="field__checkbox" id="vitamins" name="vitamins" type="checkbox">
                   <label class="field__name" for="vitamins">Витамины</label>
                 </div>
               </div>
             </fieldset>
-            <button class="btn" type="submit">Отправить заявку</button>
-            <p class="program-form__note">* — Обязательные поля</p>
+            <div class="program-form__submit">
+              <button class="program-form__btn btn" type="submit">Отправить заявку</button>
+              <p class="program-form__note">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </div>
 
       <div class="container">
         <div class="container__inner container__inner--full-width">
-          <section class="cooperation">
+          <section class="cooperation cooperation--dark">
             <div class="cooperation__inner">
               <h2 class="cooperation__title visually-hidden">Сотрудничество</h2>
               <div class="cooperation__wrapper">
