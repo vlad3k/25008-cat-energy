@@ -42,7 +42,7 @@
 
   &:focus {
     border: 2px solid #444444;
-    outline:none;
+    outline: none;
   }
 
   &:invalid {
@@ -64,7 +64,7 @@
   padding-bottom: 6px;
   padding-left: 46px;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -141,7 +141,7 @@
 
   &:focus {
     border: 2px solid #444444;
-    outline:none;
+    outline: none;
   }
 
   @media (min-width: $media-tablet) {
@@ -301,7 +301,7 @@
     padding-bottom: 11px;
     padding-left: 57px;
 
-    &:before {
+    &::before {
       width: 40px;
       height: 40px;
     }
@@ -309,7 +309,6 @@
 }
 
 .field--checkbox .field__checkbox:checked ~ .field__name {
-
   &::after {
     content: "";
     position: absolute;
@@ -322,7 +321,7 @@
   }
 
   @media (min-width: $media-tablet) {
-    &:after {
+    &::after {
       top: 13px;
       left: 9px;
     }
