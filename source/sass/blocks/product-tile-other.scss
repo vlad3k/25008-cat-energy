@@ -70,7 +70,7 @@
 
   @media (min-width: $media-desktop) {
     width: 311px;
-    margin-bottom: -7px;
+    margin-bottom: 0;
     margin-right: 15px;
   }
 }
@@ -83,6 +83,7 @@
 
   @media (min-width: $media-desktop) {
     width: 79%;
+    padding-top: 7px;
     text-align: left;
   }
 }
@@ -96,6 +97,7 @@
 
   @media (min-width: $media-desktop) {
     width: 21%;
+    padding-top: 7px;
     text-align: left;
   }
 }

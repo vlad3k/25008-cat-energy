@@ -22,7 +22,6 @@
   margin-top: 0;
   margin-left: -20px;
   margin-right: -20px;
-  padding-left: 20px;
   margin-bottom: 32px;
   font-size: 24px;
   line-height: 27px;
@@ -30,55 +29,59 @@
   font-family: $Oswald;
   color: #000000;
   background-color: #ffffff;
-  overflow: hidden;
 
-  &::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    width: 100%;
-    height: 3px;
-    margin-right: -100%;
-    background: #68b738;
-    border: solid #ffffff;
-    border-width: 0 22px;
+  span {
+    padding-left: 20px;
+    padding-right: 22px;
+    background-color: #ffffff;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #68b738;
+  }
 
   @media (min-width: $media-tablet) {
     margin-bottom: 77px;
     margin-left: -30px;
     margin-right: -30px;
-    padding-left: 67px;
+    padding-left: 28px;
     font-size: 36px;
     line-height: 42px;
 
-    &::before {
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      box-sizing: border-box;
-      width: 100%;
-      height: 3px;
-      margin-left: -100%;
-      background: #68b738;
-      border: solid #ffffff;
-      border-width: 0 39px;
+    span {
+      padding-left: 39px;
+      padding-right: 36px;
     }
 
-    &::after {
-      border-width: 0 37px;
+    &::before {
+      top: 25px;
     }
   }
 
   @media (min-width: $media-desktop) {
     margin-bottom: 75px;
-    padding-left: 29px;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 0;
     line-height: 46px;
 
-    &::after {
-      border-width: 0 36px;
+    span {
+      padding-left: 38px;
+    }
+
+    &::before {
+      width: 100vw;
+      top: 28px;
+      left: -40px;
+      right: -40px;
     }
   }
 }
