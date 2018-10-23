@@ -53,6 +53,11 @@
       padding-left: 39px;
       padding-right: 36px;
     }
+
+    &::before,
+    &::after {
+      margin-top: 25px;
+    }
   }
 
   @media (min-width: $media-desktop) {
@@ -66,10 +71,10 @@
       padding-left: 38px;
     }
 
-    /* &::before {
-      width: 70px;
-      margin-left: -70px;
-    } */
+    &::before,
+    &::after {
+      margin-top: 28px;
+    }
   }
 }
 

@@ -29,6 +29,16 @@
 
 .social-list__link {
   font-size: 0;
+
+  &:hover {
+    svg {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link--vk {
