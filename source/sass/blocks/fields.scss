@@ -14,13 +14,17 @@
 }
 
 .fields--common {
-  padding-bottom: 72px;
+  padding-bottom: 23px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 72px;
+  }
 
   @media (min-width: $media-desktop) {
     width: 570px;
     margin-right: 80px;
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 }
 
@@ -42,6 +46,7 @@
 }
 
 .fields__title {
+  @include title-line;
   margin: 0;
   margin-bottom: 34px;
   font-size: 24px;
@@ -50,10 +55,25 @@
   font-family: $Oswald;
   color: #111111;
 
+  span {
+    padding-right: 22px;
+  }
+
   @media (min-width: $media-tablet) {
     margin-bottom: 76px;
+    margin-left: -42px;
+    margin-right: -37px;
     font-size: 36px;
     line-height: 36px;
+
+    span {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    margin-right: 0;
   }
 }
 
@@ -86,8 +106,22 @@
     padding-bottom: 45px;
   }
 
-  @media (min-width: $media-tablet) {
+  @media (min-width: $media-desktop) {
     padding-bottom: 48px;
+  }
+}
+
+.fields__title--contacts {
+  span {
+    max-width: 201px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $media-tablet) {
+    span {
+      max-width: none;
+      padding-right: 42px;
+    }
   }
 }
 
@@ -100,7 +134,15 @@
 }
 
 .fields--coment {
-  padding-bottom: 59px;
+  padding-bottom: 23px;
+
+  @media (min-width: $media-tablet) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-bottom: 67px;
+  }
 }
 
 .fields--extra {
@@ -108,10 +150,11 @@
   padding-bottom: 32px;
 
   @media (min-width: $media-tablet) {
+    padding-top: 0;
     padding-bottom: 54px;
   }
 
-  @media (min-width: $media-tablet) {
+  @media (min-width: $media-desktop) {
     padding-bottom: 60px;
   }
 }
@@ -119,10 +162,6 @@
 .fields--extra .fields__title {
   @media (min-width: $media-tablet) {
     margin-bottom: 57px;
-  }
-
-  @media (min-width: $media-tablet) {
-    margin-bottom: 60px;
   }
 }
 

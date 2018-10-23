@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная страница Кэт энерджи</title>
+    <title>Подбор программы Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -20,9 +20,9 @@
               <img src="img/logo-mobile.svg" alt="Кэт энерджи">
             </picture>
           </a>
-          <button class="page-header__toggle page-header__toggle--open" type="button">Открыть меню
+          <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню
           </button>
-          <nav class="main-nav main-nav--open">
+          <nav class="main-nav main-nav--close">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -39,7 +39,7 @@
       </header>
     </div>
 
-    <main class="page-main page-main--padding">
+    <main class="page-main page-main--padding-bottom">
       <div class="container">
         <div class="container__inner">
           <h1 class="page-main__title page-main__title--margin">Подбор программы</h1>
@@ -67,21 +67,21 @@
               </fieldset>
               <fieldset class="fields fields--radio">
                 <div class="fields__item field field--radio">
-                  <input class="field__radio" id="loss" name="variant" type="radio" checked>
+                  <input class="field__radio visually-hidden" id="loss" name="variant" type="radio" checked>
                   <label class="field__name" for="loss">Похудение</label>
                 </div>
                 <div class="fields__item field field--radio">
-                  <input class="field__radio" id="gain" name="variant" type="radio">
+                  <input class="field__radio visually-hidden" id="gain" name="variant" type="radio">
                   <label class="field__name" for="gain">Набор массы</label>
                 </div>
                 <div class="fields__item field field--radio">
-                  <input class="field__radio" id="unknown" name="variant" type="radio">
+                  <input class="field__radio visually-hidden" id="unknown" name="variant" type="radio">
                   <label class="field__name" for="unknown">Не знаю (Нужен ваш совет)</label>
                 </div>
               </fieldset>
             </div>
             <fieldset class="fields fields--contacts">
-              <h3 class="fields__title">Контактные данные (владельца кота)</h3>
+              <h3 class="fields__title fields__title--contacts"><span>Контактные данные (владельца кота)</span></h3>
               <div class="fields__wrapper">
                 <div class="fields__item field field--contact">
                   <label class="field__name" for="email">E-mail:*</label>
@@ -105,28 +105,28 @@
               </div>
             </fieldset>
             <fieldset class="fields fields--coment">
-              <h3 class="fields__title">Комментарий</h3>
+              <h3 class="fields__title"><span>Комментарий</span></h3>
               <div class="fields__item field">
                 <textarea class="field__comment" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
             <fieldset class="fields fields--extra">
-              <h3 class="fields__title">Дополнительно</h3>
+              <h3 class="fields__title"><span>Дополнительно</span></h3>
               <div class="fields__wrapper">
                 <div class="fields__item field field--checkbox">
-                  <input class="field__checkbox" id="sweetener" name="sweetener" type="checkbox" checked>
+                  <input class="field__checkbox visually-hidden" id="sweetener" name="sweetener" type="checkbox" checked>
                   <label class="field__name" for="sweetener">Сахарозаменитель</label>
                 </div>
                 <div class="fields__item field field--checkbox">
-                  <input class="field__checkbox" id="water" name="water" type="checkbox">
+                  <input class="field__checkbox visually-hidden" id="water" name="water" type="checkbox">
                   <label class="field__name" for="water">Питьевая вода</label>
                 </div>
                 <div class="fields__item field field--checkbox">
-                  <input class="field__checkbox" id="milk" name="milk" type="checkbox">
+                  <input class="field__checkbox visually-hidden" id="milk" name="milk" type="checkbox">
                   <label class="field__name" for="milk">Молоко</label>
                 </div>
                 <div class="fields__item field field--checkbox">
-                  <input class="field__checkbox" id="vitamins" name="vitamins" type="checkbox">
+                  <input class="field__checkbox visually-hidden" id="vitamins" name="vitamins" type="checkbox">
                   <label class="field__name" for="vitamins">Витамины</label>
                 </div>
               </div>
@@ -161,7 +161,7 @@
       <footer class="page-footer">
         <div class="page-footer__inner">
           <a class="page-footer__logo-2 logo-2">
-            <img class="logo-2__img" src="img/logo-footer.svg" width="128px" height="24px" alt="Логотип Cat Energy">
+            <img class="logo-2__img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
           <ul class="page-footer__social social-list social-list__link--vk">
             <li class="social-list__item">
