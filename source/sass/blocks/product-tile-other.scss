@@ -1,14 +1,35 @@
 .product-tile-other {
   padding-top: 14px;
+  padding-bottom: 17px;
   background-color: #ffffff;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $media-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 26px;
-    padding-left: 9px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+    padding-right: 36px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $media-desktop) {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 0;
+    padding-right: 5px;
+    border-left: none;
+    border-right: none;
   }
 }
 
 .product-tile-other__name {
+  display: block;
   margin-top: 0;
   margin-bottom: 11px;
   font-size: 16px;
@@ -16,17 +37,23 @@
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
+  text-decoration: none;
   color: #111111;
 
   @media (min-width: $media-tablet) {
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $media-desktop) {
+    margin: 0;
+  }
 }
 
 .product-tile-other__properties {
   width: 100%;
   margin-bottom: 14px;
+  margin-left: auto;
   font-size: 14px;
   line-height: 14px;
   font-weight: normal;
@@ -35,17 +62,58 @@
   border-collapse: collapse;
 
   @media (min-width: $media-tablet) {
+    width: 235px;
+    margin-bottom: 18px;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 311px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.product-tile-other__property {
+  @media (min-width: $media-tablet) {
+    width: 130px;
+    text-align: right;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 79%;
+    padding-top: 7px;
+    text-align: left;
   }
 }
 
 .product-tile-other__value {
   text-align: right;
+
+  @media (min-width: $media-tablet) {
+    width: 86px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 21%;
+    padding-top: 7px;
+    text-align: left;
+  }
 }
 
 .product-tile-other__btn {
   padding-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $media-tablet) {
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: $media-desktop) {
+    width: auto;
+  }
 }

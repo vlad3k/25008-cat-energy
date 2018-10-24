@@ -1,3 +1,9 @@
+.container--gradient {
+  @media (min-width: $media-desktop) {
+    background: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 0%);
+  }
+}
+
 .container__inner {
   margin: 0 auto;
   width: 320px;
@@ -21,4 +27,9 @@
 .container__inner--full-width {
   width: 100%;
   padding: 0;
+}
+
+.container__inner--without-padding {
+  padding-left: 0;
+  padding-right: 0;
 }

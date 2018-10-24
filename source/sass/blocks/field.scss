@@ -1,14 +1,159 @@
 .field {
+  position: relative;
+  display: flex;
+  align-items: center;
   background-color: #ffffff;
 }
 
 .field__name {
+  flex-shrink: 0;
+  margin-right: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: #222222;
+
+  @media (min-width: $media-tablet) {
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.field__input {
+  width: 100%;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
   color: #111111;
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  @media (min-width: $media-tablet) {
+    height: 52px;
+    padding-left: 19px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.field--radio .field__name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $media-tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.field__radio:checked ~ .field__name {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    margin-top: 0;
+    background: #68b738;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $media-tablet) {
+    &::after {
+      top: 11px;
+      left: 11px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.field__comment {
+  width: 280px;
+  height: 150px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: $Oswald;
+  text-transform: uppercase;
+  color: #111111;
+  border: 1px solid #e6e6e6;
+  resize: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  @media (min-width: $media-tablet) {
+    width: 100%;
+    height: 174px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-left: 20px;
+  }
 }
 
 .field__input::-webkit-input-placeholder,
@@ -19,6 +164,11 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__input::-moz-placeholder,
@@ -29,6 +179,11 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__input:-moz-placeholder,
@@ -39,6 +194,11 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__input:-ms-input-placeholder,
@@ -49,4 +209,119 @@
   font-family: $Oswald;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $media-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.field--contact {
+  @media (min-width: $media-desktop) {
+    width: 50%;
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.field--contact .field__input {
+  padding-right: 40px;
+}
+
+.field__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+
+  @media (min-width: $media-desktop) {
+    right: 59px;
+  }
+}
+
+.field--checkbox {
+  margin-bottom: 12px;
+
+  @media (min-width: $media-tablet) {
+    width: 50%;
+    margin-bottom: 32px;
+
+    &:nth-child(even) {
+      padding-left: 29px;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $media-desktop) {
+    width: 245px;
+    margin-bottom: 0;
+
+    &:nth-child(even) {
+      padding-left: 0;
+    }
+  }
+}
+
+.field--checkbox .field__name {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 7px;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cfcfcf;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $media-tablet) {
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 57px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.field__checkbox:checked ~ .field__name {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 21px;
+    height: 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $media-tablet) {
+    &::after {
+      top: 13px;
+      left: 9px;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 .main-block {
-  margin-bottom: 22px;
-  padding-top: 3px;
+  padding-top: 26px;
+  text-align: center;
   background-color: #ffffff;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -9,25 +9,35 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     padding-top: 58px;
+    padding-left: 118px;
     background-image: none;
   }
 
   @media (min-width: $media-desktop) {
-    margin-bottom: 80px;
-    padding-top: 222px;
-    padding-bottom: 55px;
-    background-position: 112% 0;
-    background-image: url("../img/index-background-desktop@1x.jpg");
+    position: relative;
+    min-height: 584px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 120px;
+    background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -112px;
+      right: 0;
+      width: 651px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
   }
 }
 
-
 .main-block__title {
-  margin-top: 24px;
+  margin-top: 0;
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
@@ -39,10 +49,9 @@
   @media (min-width: $media-tablet) {
     z-index: 1;
     order: 1;
+    max-width: 570px;
     margin-top: 0;
     margin-bottom: 41px;
-    padding-left: 67px;
-    padding-right: 50px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -51,7 +60,6 @@
 
   @media (min-width: $media-desktop) {
     max-width: 550px;
-    padding-left: 80px;
     padding-right: 0;
   }
 }
@@ -71,7 +79,6 @@
     z-index: 1;
     order: 2;
     margin-bottom: 48px;
-    padding-left: 68px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -80,7 +87,7 @@
 
   @media (min-width: $media-desktop) {
     margin-bottom: 53px;
-    padding-left: 80px;
+    padding-left: 0;
   }
 }
 
@@ -90,26 +97,32 @@
     width: 709px;
     height: 609px;
     margin-top: -80px;
-    margin-left: -21px;
-    margin-right: -20px;
+    margin-left: -89px;
   }
 
   @media (min-width: $media-desktop) {
-    margin-left: 450px;
-    margin-top: -366px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 160px);
     width: 552px;
     height: 499px;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
 .main-block__btn {
+  margin-left: 20px;
+  margin-right: 20px;
+
   @media (min-width: $media-tablet) {
     z-index: 1;
     order: 3;
-    margin-left: 69px;
+    margin-left: 1px;
+    margin-right: 0;
   }
 
-  @media (min-width: $media-desktop) {
-    margin-left: 80px;
+  @media (min-width: $media-tablet) {
+    margin-left: 0;
   }
 }

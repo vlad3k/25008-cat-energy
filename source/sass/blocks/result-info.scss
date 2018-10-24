@@ -32,7 +32,6 @@
   }
 }
 
-
 .result-info__item-value {
   margin-top: 0;
   margin-bottom: 0;
@@ -74,6 +73,10 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $media-desktop) {
+    background-color: #f2f2f2;
   }
 }
 

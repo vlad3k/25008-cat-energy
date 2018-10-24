@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная страница Кэт энерджи</title>
+    <title>Каталог Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -13,7 +13,7 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header__inner">
-          <a class="logo page-header__logo">
+          <a class="logo page-header__logo" href="index.html">
             <picture class="logo__image">
               <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -22,13 +22,13 @@
           </a>
           <button class="page-header__toggle page-header__toggle--open" type="button">Открыть меню
           </button>
-          <nav class="main-nav--open">
+          <nav class="main-nav main-nav--open">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link">Главная</a>
-              </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link">Каталог продукции</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="form.html">Подбор программы</a>
@@ -39,7 +39,7 @@
       </header>
     </div>
 
-    <main class="page-main">
+    <main class="page-main page-main--padding-bottom">
 
       <div class="container">
         <div class="container__inner">
@@ -49,15 +49,15 @@
           <ul class="products">
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
                     <img src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy PRO 500 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy PRO 500 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -78,15 +78,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
                     <img src="img/chicken-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy PRO 1000 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy PRO 1000 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -107,15 +107,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
                     <img src="img/fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy PRO 500 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy PRO 500 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -136,15 +136,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
-                      <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
+                    <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
                     <img src="img/fish-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy PRO 1000 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy PRO 1000 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -165,15 +165,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
                     <img src="img/buckwheat-small-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy Slim 500 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy Slim 500 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -194,15 +194,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
                     <img src="img/buckwheat-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy Slim 1000 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy Slim 1000 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -223,15 +223,15 @@
             </li>
             <li class="products__item">
               <div class="product-tile">
-                <div class="product-tile__img">
+                <a class="product-tile__img" href="#">
                   <picture>
                     <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
                     <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
                     <img src="img/rice-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
                   </picture>
-                </div>
+                </a>
                 <div class="product-tile__wrapper">
-                  <h3 class="product-tile__name">Cat Energy Slim 500 г</h3>
+                  <a class="product-tile__name" href="#">Cat Energy Slim 500 г</a>
                   <table class="product-tile__properties">
                     <tr class="product-tile__item">
                       <td class="product-tile__property">Объем</td>
@@ -250,7 +250,7 @@
                 <a class="product-tile__btn btn" href="#">Заказать</a>
               </div>
             </li>
-            <li class="products__item">
+            <li class="products__item products__item--more">
               <div class="more">
                 <div class="more__plus"></div>
                 <p class="more__title">Показать еще 100500 товаров</p>
@@ -265,24 +265,24 @@
       <div class="container">
         <div class="container__inner">
           <div class="other-products">
-            <h2 class="other-products__title">Дополнительные товары</h2>
+            <h2 class="other-products__title"><span>Дополнительные товары</span></h2>
             <div class="other-products__wrapper">
-              <ul class="products">
-                <li class="products__item">
+              <ul class="products-extra">
+                <li class="products-extra__item">
                   <div class="product-tile-other">
-                    <h3 class="product-tile-other__name">Сахарозаменитель</h3>
+                    <a class="product-tile-other__name" href="#">Сахарозаменитель</a>
                     <table class="product-tile-other__properties">
                       <tr class="product-tile-other__item">
                         <td class="product-tile-other__property">1 упаковка (100 г)</td>
-                        <td class="product-tile-other__value">100 Р.</td>
+                        <td class="product-tile-other__value">200 Р.</td>
                       </tr>
                     </table>
                     <a class="product-tile-other__btn btn" href="#">Заказать</a>
                   </div>
                 </li>
-                <li class="products__item">
+                <li class="products-extra__item">
                   <div class="product-tile-other">
-                    <h3 class="product-tile-other__name">Питьевая вода</h3>
+                    <a class="product-tile-other__name" href="#">Питьевая вода</a>
                     <table class="product-tile-other__properties">
                       <tr class="product-tile-other__item">
                         <td class="product-tile-other__property">5 литров</td>
@@ -292,9 +292,9 @@
                     <a class="product-tile-other__btn btn" href="#">Заказать</a>
                   </div>
                 </li>
-                <li class="products__item">
+                <li class="products-extra__item">
                   <div class="product-tile-other">
-                    <h3 class="product-tile-other__name">Молоко</h3>
+                    <a class="product-tile-other__name" href="#">Молоко</a>
                     <table class="product-tile-other__properties">
                       <tr class="product-tile-other__item">
                         <td class="product-tile-other__property">1 литр</td>
@@ -304,9 +304,9 @@
                     <a class="product-tile-other__btn btn" href="#">Заказать</a>
                   </div>
                 </li>
-                <li class="products__item">
+                <li class="products-extra__item">
                   <div class="product-tile-other">
-                    <h3 class="product-tile-other__name">Витамины</h3>
+                    <a class="product-tile-other__name" href="#">Витамины</a>
                     <table class="product-tile-other__properties">
                       <tr class="product-tile-other__item">
                         <td class="product-tile-other__property">1 упаковка (30 г)</td>
@@ -327,7 +327,7 @@
 
       <div class="container">
         <div class="container__inner container__inner--full-width">
-          <section class="cooperation">
+          <section class="cooperation cooperation--dark">
             <div class="cooperation__inner">
               <h2 class="cooperation__title visually-hidden">Сотрудничество</h2>
               <div class="cooperation__wrapper">
@@ -346,8 +346,8 @@
     <div class="container">
       <footer class="page-footer">
         <div class="page-footer__inner">
-          <a class="page-footer__logo-2 logo-2">
-            <img class="logo-2__img" src="img/logo-footer.svg" width="128px" height="24px" alt="Логотип Cat Energy">
+          <a class="page-footer__logo-2 logo-2" href="index.html">
+            <img class="logo-2__img" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
           </a>
           <ul class="page-footer__social social-list social-list__link--vk">
             <li class="social-list__item">
@@ -401,7 +401,7 @@
           <div class="page-footer__copyright">
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
               <span> HTML Academy</span>
-              <svg width="40px" height="40px" viewBox="0 0 60 60"><path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+              <svg fill="#666666" width="40px" height="40px" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
             </a>
           </div>
         </div>
