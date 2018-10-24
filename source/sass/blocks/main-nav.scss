@@ -23,6 +23,7 @@
 
   @media (min-width: $media-tablet) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: 20px;
     margin-right: 0;
@@ -44,6 +45,8 @@
 
 .main-nav__item {
   @media (min-width: $media-tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 35px;
 
     &:first-child {
@@ -59,7 +62,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -10px;
+      bottom: 0;
       left: 0;
       display: block;
       width: 98%;

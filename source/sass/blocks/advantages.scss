@@ -4,7 +4,7 @@
 
   @media (min-width: $media-tablet) {
     padding-top: 15px;
-    padding-bottom: 55px;
+    padding-bottom: 57px;
     padding-left: 0;
     padding-right: 0;
     border-bottom: 1px solid #e6e6e6;
@@ -106,7 +106,7 @@
   }
 
   @media (min-width: $media-desktop) {
-    margin-bottom: 0;
+    margin-bottom: 50px;
     padding-left: 40px;
     width: 25%;
 
@@ -116,6 +116,13 @@
 
     &::after {
       left: 152px;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      margin-bottom: 0;
     }
   }
 }

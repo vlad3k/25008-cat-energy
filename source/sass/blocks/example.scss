@@ -79,6 +79,9 @@
 }
 
 .example__cost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 34px;
   font-size: 14px;
   line-height: 20px;
@@ -89,6 +92,7 @@
   color: #111111;
 
   @media (min-width: $media-tablet) {
+    display: block;
     max-width: 192px;
     margin-left: auto;
     padding-top: 8px;
@@ -99,14 +103,28 @@
   }
 
   @media (min-width: $media-desktop) {
+    display: flex;
+    justify-content: flex-start;
     max-width: none;
     margin-left: 0;
     text-align: left;
-
-    span {
-      padding-right: 59px;
-    }
   }
+}
+
+.example__cost-text {
+  padding-right: 3px;
+
+  @media (min-width: $media-tablet) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $media-desktop) {
+    padding-right: 64px;
+  }
+}
+
+.example__price {
+  white-space: nowrap;
 }
 
 .example__cat {
@@ -209,26 +227,42 @@
   text-transform: uppercase;
   color: #111111;
 
+  &:nth-child(1) {
+    margin-right: 18px;
+  }
+
+  &:last-child {
+    margin-left: 18px;
+  }
+
   @media (min-width: $media-tablet) {
     display: inline-block;
     padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dotted #bebebe;
+
+    &:nth-child(1) {
+      margin-right: 22px;
+    }
+
+    &:last-child {
+      margin-left: 22px;
+    }
   }
 }
 
 .example__line {
   position: relative;
-  max-width: 84px;
-  width: 100%;
+  flex-shrink: 0;
+  width: 84px;
   height: 14px;
   background-color: #ffffff;
   border: 1px solid #cfcfcf;
   border-radius: 6px;
 
   @media (min-width: $media-tablet) {
-    max-width: 428px;
+    width: 427px;
     height: 6px;
     margin-top: -7px;
     background-color: #dcdcdc;
