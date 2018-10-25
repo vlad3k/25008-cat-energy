@@ -232,6 +232,14 @@
   padding-right: 40px;
 }
 
+.field--contact .field__input:focus ~ .field__icon {
+  fill: #68b738;
+}
+
+.field--contact .field__input:invalid ~ .field__icon {
+  fill: #ff8282;
+}
+
 .field__icon {
   position: absolute;
   top: 50%;
