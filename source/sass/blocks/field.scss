@@ -219,9 +219,12 @@
 .field--contact {
   @media (min-width: $media-desktop) {
     width: 50%;
-    margin-bottom: 0;
     padding-left: 40px;
     padding-right: 40px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -251,17 +254,19 @@
       padding-left: 29px;
     }
 
-    &:nth-last-child(2) {
-      margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 32px;
     }
   }
 
   @media (min-width: $media-desktop) {
-    width: 245px;
-    margin-bottom: 0;
+    width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 32px;
 
     &:nth-child(even) {
-      padding-left: 0;
+      padding-left: 40px;
     }
   }
 }
