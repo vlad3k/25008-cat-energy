@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+     <!-- Pixel Glass -->
+     <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* Mobile layout by default */
+        background-image: url( "pixel-glass/preview/cat-energy-form-mobile.jpg" );
+      }
+      /* Tablet */
+      @media ( min-width: 760px ) {
+        HTML {
+          /* Tablet layout */
+          background-image: url( "pixel-glass/preview/cat-energy-form-tablet.jpg" );
+        }
+      }
+      /* Desktop */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Desktop layout */
+          background-image: url( "pixel-glass/preview/cat-energy-form-desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
 
   <body>
@@ -20,9 +46,9 @@
               <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи">
             </picture>
           </a>
-          <button class="page-header__toggle page-header__toggle--open" type="button">Открыть меню
+          <button class="page-header__toggle page-header__toggle--close" type="button">Открыть меню
           </button>
-          <nav class="main-nav main-nav--open">
+          <nav class="main-nav main-nav--close">
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a class="main-nav__link" href="index.html">Главная</a>
@@ -144,7 +170,7 @@
                 <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
               </div>
             </div>
-            <div class="cooperation__map map">
+            <div class="cooperation__map map" id="map">
             </div>
           </section>
         </div>
@@ -193,6 +219,9 @@
       </footer>
     </div>
 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=29833cbd-4197-453e-bbd5-206fec116649&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/all.js"></script>
+    <script>svg4everybody();</script>
   </body>
 
 </html>
