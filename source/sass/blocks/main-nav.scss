@@ -32,6 +32,7 @@
 
 .main-nav--close {
   display: none;
+
   @media (min-width: $media-tablet) {
     display: block;
   }
@@ -124,7 +125,7 @@
 
 .main-nav--light {
   @media (min-width: $media-desktop) {
-    max-width: 611px
+    max-width: 611px;
   }
 }
 

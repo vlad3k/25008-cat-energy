@@ -188,6 +188,7 @@
 
 .field__comment::-moz-placeholder {
   line-height: 18px;
+
   @media (min-width: $media-tablet) {
     line-height: 18px;
   }
@@ -210,6 +211,7 @@
 
 .field__comment:-moz-placeholder {
   line-height: 18px;
+
   @media (min-width: $media-tablet) {
     line-height: 28px;
   }

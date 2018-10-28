@@ -148,7 +148,7 @@
       content: "";
       position: absolute;
       top: 0;
-      bottom: 0px;
+      bottom: 0;
       right: 0;
       width: 50%;
       z-index: -1;
@@ -293,114 +293,6 @@
 .example__range {
   display: none;
 }
-
-// range styles
-/*
-.example__range {
-  max-width: 427px;
-  -webkit-appearance: none;
-  width: 100%;
-  background: transparent;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.example__range::-webkit-slider-thumb {
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #68b738;
-  border-radius: 5px;
-  -webkit-appearance: none;
-  box-shadow: 0px 0px 0px 12px #000000, 0 2px 3px 1px rgba(0, 0, 0, 0.15),;
-}
-
-.example__range::-webkit-slider-thumb::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-
-  background-color: #68b738;
-  border-radius: 5px;
-  transform: translate(-50%, -50%);
-}
-
-.example__range::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.example__range::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.example__range::-ms-track {
-  width: 100%;
-  height: 6px;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-  cursor: pointer;
-}
-
-.example__range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 6px;
-  background: #dcdcdc;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.example__range:focus::-webkit-slider-runnable-track {
-  background: #dcdcdc;
-}
-
-.example__range::-moz-range-track {
-  width: 100%;
-  height: 6px;
-  background: #dcdcdc;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.example__range::-ms-fill-lower {
-  background: #dcdcdc;
-  border-radius: 10px;
-}
-
-.example__range:focus::-ms-fill-lower {
-  background: #dcdcdc;
-  border: none;
-}
-
-.example__range::-ms-fill-upper {
-  background: #dcdcdc;
-  border-radius: 10x;
-  border: none;
-}
-
-.example__range:focus::-ms-fill-upper {
-  background: #dcdcdc;
-}
-*/
-//range styles end
 
 .example__toggle {
   background-color: transparent;
