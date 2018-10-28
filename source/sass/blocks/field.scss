@@ -174,7 +174,7 @@
 .field__input::-moz-placeholder,
 .field__comment::-moz-placeholder {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 42px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
@@ -182,14 +182,22 @@
 
   @media (min-width: $media-tablet) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 45px;
+  }
+}
+
+.field__comment::-moz-placeholder {
+  line-height: 18px;
+
+  @media (min-width: $media-tablet) {
+    line-height: 18px;
   }
 }
 
 .field__input:-moz-placeholder,
 .field__comment:-moz-placeholder {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 42px;
   font-weight: normal;
   font-family: $Oswald;
   text-transform: uppercase;
@@ -197,7 +205,15 @@
 
   @media (min-width: $media-tablet) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 45px;
+  }
+}
+
+.field__comment:-moz-placeholder {
+  line-height: 18px;
+
+  @media (min-width: $media-tablet) {
+    line-height: 28px;
   }
 }
 
@@ -319,6 +335,10 @@
   }
 }
 
+.field__checkbox:focus ~ .field__name::before {
+  border-color: #bababa;
+}
+
 .field__checkbox:checked ~ .field__name {
   &::after {
     content: "";
@@ -327,7 +347,7 @@
     left: 5px;
     width: 21px;
     height: 16px;
-    background-image: url("../img/icon-tick.svg");
+    background-image: url("../img/tick.svg");
     background-repeat: no-repeat;
   }
 
