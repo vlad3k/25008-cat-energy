@@ -333,6 +333,10 @@
   }
 }
 
+.field__checkbox:focus ~ .field__name::before {
+  border-color: #bababa;
+}
+
 .field__checkbox:checked ~ .field__name {
   &::after {
     content: "";

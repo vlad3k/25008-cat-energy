@@ -57,7 +57,6 @@ gulp.task("copy", function() {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*",
     "!source/img/icon-*.svg",
-    "source/js/**/*.js",
     "source/*.html"
   ], {
     base: "source"
@@ -101,7 +100,7 @@ gulp.task("js", function() {
     "node_modules/svg4everybody/dist/svg4everybody.min.js",
     "source/js/*.js"
   ])
-    .pipe(concat("all.js"))
+    .pipe(concat("all.min.js"))
     .pipe(gulp.dest("build/js"));
 });
 
