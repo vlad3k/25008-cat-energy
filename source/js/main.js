@@ -2,15 +2,14 @@
   var menu = document.getElementById("menu");
   var hamb = document.getElementById("hamb");
   menu.classList.remove("main-nav--no-js");
-  menu.classList.add("main-nav--close");
   hamb.classList.remove("page-header__toggle--no-js");
-  hamb.classList.add("page-header__toggle--close");
 
   hamb.addEventListener("click", function() {
     menu.classList.toggle("main-nav--close");
     hamb.classList.toggle("page-header__toggle--open");
   });
 })();
+
 
 (function () {
   ymaps.ready(function() {
@@ -29,7 +28,6 @@
       iconImageOffset: [-54, -106],
     });
 
-    myMap.geoObjects
-      .add(myPlacemark);
+    myMap.geoObjects.add(myPlacemark);
   });
 })();
