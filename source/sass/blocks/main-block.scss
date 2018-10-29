@@ -29,7 +29,7 @@
     padding-left: 120px;
     background-image: none;
 
-    &::before {
+    /*&::before {
       content: "";
       position: absolute;
       top: -112px;
@@ -44,7 +44,7 @@
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
-    }
+    } */
   }
 }
 
@@ -114,6 +114,7 @@
 
   @media (min-width: $media-desktop) {
     position: absolute;
+    z-index: 1;
     top: 30px;
     left: calc(50% - 160px);
     width: 552px;

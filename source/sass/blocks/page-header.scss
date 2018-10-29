@@ -8,6 +8,28 @@
   }
 }
 
+.page-header--presentation {
+  @media (min-width: $media-desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 50%;
+      height: 696px;
+      background-color: #68b738;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
 .page-header__inner {
   display: flex;
   flex-wrap: wrap;

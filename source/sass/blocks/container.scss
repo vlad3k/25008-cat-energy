@@ -1,3 +1,7 @@
+.container--overflow-x {
+  overflow-x: hidden;
+}
+
 .container--gradient {
   @media (min-width: $media-desktop) {
     background: linear-gradient(to bottom, #ffffff 25%, #f2f2f2 0%);

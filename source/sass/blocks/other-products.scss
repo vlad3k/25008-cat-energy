@@ -1,12 +1,9 @@
 .other-products {
+  padding-top: 27px;
   background-color: #ffffff;
 
   @media (min-width: $media-tablet) {
-    .products {
-      padding-top: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+    padding-top: 0;
   }
 
   @media (min-width: $media-desktop) {
@@ -15,8 +12,6 @@
 }
 
 .other-products__title {
-  @include title-line;
-  position: relative;
   z-index: 1;
   margin-top: 0;
   margin-left: -20px;
@@ -30,13 +25,10 @@
   background-color: #ffffff;
 
   span {
+    @include title-line;
+    display: inline-block;
     padding-left: 20px;
     padding-right: 22px;
-    background-color: #ffffff;
-  }
-
-  &::after {
-    margin-right: 0;
   }
 
   @media (min-width: $media-tablet) {
@@ -51,11 +43,6 @@
       padding-left: 39px;
       padding-right: 36px;
     }
-
-    &::before,
-    &::after {
-      margin-top: 25px;
-    }
   }
 
   @media (min-width: $media-desktop) {
@@ -68,11 +55,6 @@
     span {
       padding-left: 38px;
     }
-
-    &::before,
-    &::after {
-      margin-top: 28px;
-    }
   }
 }
 
@@ -81,21 +63,5 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-}
-
-.other-products .products__item {
-  padding-bottom: 17px;
-
-  &:last-child {
-    padding-bottom: 17px;
-    border-bottom: 1px solid #ededed;
-  }
-
-  @media (min-width: $media-tablet) {
-    width: 100%;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
-    border-top: 1px solid #e6e6e6;
   }
 }

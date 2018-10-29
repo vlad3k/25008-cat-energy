@@ -142,6 +142,16 @@
   }
 }
 
+.program--slim .program__desc {
+  @media (min-width: $media-tablet) {
+    max-width: 375px;
+  }
+
+  @media (min-width: $media-desktop) {
+    max-width: none;
+  }
+}
+
 .program__link {
   position: relative;
   z-index: 1;

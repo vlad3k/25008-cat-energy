@@ -45,7 +45,6 @@
 }
 
 .fields__title {
-  @include title-line;
   margin: 0;
   margin-bottom: 34px;
   font-size: 24px;
@@ -55,6 +54,8 @@
   color: #111111;
 
   span {
+    @include title-line;
+    display: inline-block;
     padding-right: 22px;
   }
 
@@ -68,6 +69,11 @@
     span {
       padding-left: 40px;
       padding-right: 40px;
+
+      &::before,
+      &::after {
+        top: 22px;
+      }
     }
   }
 
