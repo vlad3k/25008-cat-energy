@@ -24,6 +24,7 @@
 
 .field__input {
   flex-grow: 1;
+  width: 100px;
   height: 45px;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,6 +55,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.field__input::-ms-clear {
+  display: none;
 }
 
 .field--radio .field__name {

@@ -41,3 +41,9 @@ img {
 fieldset {
   display: table-column;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  fieldset {
+    display: block;
+  }
+}
