@@ -11,6 +11,10 @@
 
   <body>
 
+    <div style="display:none;">
+      <include src="source/img/sprite.svg"></include>
+    </div>
+
     <div class="container">
       <header class="page-header">
         <div class="page-header__inner">
@@ -376,7 +380,7 @@
               <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">VK
                 <svg width="22px" height="12px" role="img">
                   <title>Перейти на страницу организации в VK</title>
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -384,7 +388,7 @@
               <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/htmlacademy/">Instagram
                 <svg width="16px" height="16px" role="img">
                     <title>Перейти на страницу организации в Instagram</title>
-                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -392,7 +396,7 @@
               <a class="social-list__link social-list__link--fb" href="https://www.facebook.com/htmlacademy/">Facebook
                 <svg width="10px" height="19px" role="img">
                   <title>Перейти на страницу организации в Facebook</title>
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -401,7 +405,7 @@
             <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
               <span> HTML Academy</span>
               <svg width="40px" height="40px" fill="#666666" aria-hidden="true" role="presentation">
-                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
@@ -411,7 +415,6 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=29833cbd-4197-453e-bbd5-206fec116649&lang=ru_RU"></script>
     <script src="js/all.min.js"></script>
-    <script>svg4everybody();</script>
   </body>
 
 </html>
