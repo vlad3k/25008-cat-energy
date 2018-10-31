@@ -45,15 +45,17 @@
     outline: 2px solid #444444;
   }
 
-  &:invalid {
-    outline: 2px solid #ff8282;
-  }
-
   @media (min-width: $media-tablet) {
     height: 52px;
     padding-left: 19px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.field__input--necessary {
+  &:invalid {
+    outline: 2px solid #ff8282;
   }
 }
 

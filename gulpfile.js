@@ -13,6 +13,7 @@ var del = require("del");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var concat = require("gulp-concat");
+var uglify = require("gulp-uglify");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 
@@ -67,7 +68,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("html", function() {
-  return gulp.src("build/*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
@@ -105,6 +106,7 @@ gulp.task("js", function() {
     "source/js/*.js"
   ])
     .pipe(concat("all.min.js"))
+    .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });
 
