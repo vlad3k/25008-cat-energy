@@ -1,5 +1,6 @@
 .products {
   @include reset-list;
+  padding-top: 28px;
   background-color: #ffffff;
 
   @media (min-width: $media-tablet) {

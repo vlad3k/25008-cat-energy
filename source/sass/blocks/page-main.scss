@@ -16,7 +16,7 @@
 
 .page-main__title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -31,6 +31,8 @@
 }
 
 .page-main__title--margin {
+  margin-bottom: 25px;
+
   @media (min-width: $media-tablet) {
     margin-bottom: 56px;
   }
@@ -39,7 +41,7 @@
 .page-main__description {
   max-width: 230px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
