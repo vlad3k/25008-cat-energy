@@ -87,9 +87,9 @@
     }
 
     &::before {
-      margin-bottom: 30px;
       width: 80px;
       height: 80px;
+      margin-bottom: 30px;
     }
 
     &::after {
@@ -106,9 +106,9 @@
   }
 
   @media (min-width: $media-desktop) {
+    width: 25%;
     margin-bottom: 50px;
     padding-left: 40px;
-    width: 25%;
 
     &::before {
       left: 40px;

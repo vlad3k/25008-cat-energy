@@ -53,6 +53,10 @@
   }
 }
 
+.field--contact .field__input:focus ~ .field__icon {
+  fill: #68b738;
+}
+
 .field__input--necessary:invalid:not(:placeholder-shown) {
   outline: 2px solid #ff8282;
 }
@@ -61,15 +65,9 @@
   border-color: #e6e6e6;
 }
 
-.field--contact .field__input--necessary:invalid:not(:placeholder-shown) ~ .field__icon {
+.field__input--necessary:invalid:not(:placeholder-shown) ~ .field__icon {
   fill: #ff8282;
 }
-
-/* .field__input--necessary {
-  &:invalid {
-    outline: 2px solid #ff8282;
-  }
-} */
 
 .field__input::-ms-clear {
   display: none;
@@ -279,10 +277,6 @@
 .field--contact .field__input {
   padding-right: 40px;
   overflow: hidden;
-}
-
-.field--contact .field__input:focus ~ .field__icon {
-  fill: #68b738;
 }
 
 .field__icon {

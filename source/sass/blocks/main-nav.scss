@@ -125,6 +125,13 @@
   }
 }
 
+.main-nav--light {
+  @media (min-width: $media-desktop) {
+    flex-grow: 0;
+    width: 610px;
+  }
+}
+
 .main-nav--light .main-nav__link {
   @media (min-width: $media-desktop) {
     color: #ffffff;

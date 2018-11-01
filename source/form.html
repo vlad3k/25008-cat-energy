@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы Кэт энерджи</title>
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -98,7 +97,7 @@
                 </div>
                 <div class="fields__item field field--contact">
                   <label class="field__name" for="phone">Телефон:*</label>
-                  <input class="field__input field__input--necessary" id="phone" type="tel" placeholder="8 (960) 900-60-90" maxlength="20" required>
+                  <input class="field__input field__input--necessary" id="phone" type="tel" placeholder="8 (960) 900-60-90" minlength="11" maxlength="21" required>
                   <svg class="field__icon" width="20px" height="20px" aria-hidden="true" role="presentation">
                     <use xlink:href="#icon-phone"></use>
                   </svg>
